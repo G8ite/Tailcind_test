@@ -4,18 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>De mousse et d'eau fraiche</title>
 </head>
 <body>
-
+    <header class="w-full h-20 bg-blanc flex justify-between items-center shadow-lg px-5 md:h-40">
+        <div class="flex h-5 w-8 flex-col justify-between md:hidden">
+            <span class="h-1 w-6 rounded bg-vertfonce content-['']"></span>
+            <span class="h-1 w-8 rounded bg-vertfonce content-['']"></span>
+            <span class="h-1 w-4 rounded bg-vertfonce content-['']"></span>
+        </div>
+        <a class="hidden  font-oredo uppercase text-vertclair md:block" href="#">Qui sommes-nous ?</a>
+        <a class="hidden  font-oredo uppercase text-vertclair md:block" href="#">Nos produits</a>
+        <img class="w-20 md:w-40"src="assets\img\demousse2-sansfond.png" alt="Logo de mousse et d'eau fraîche">
+        <a class="hidden  font-oredo uppercase text-vertclair md:block" href="#">Agenda</a>
+        <a class="hidden  font-oredo uppercase text-vertclair md:block" href="#">Contact</a>
+    </header>
+    <div>
+        <div>
+            <h1 class="font-oredo uppercase">De Mousse Et D'eau fraîche</h1>
+        </div>
+    </div>
 
     <script>
         tailwind.config = {
         theme: {
             extend: {
             colors: {
-                clifford: '#da373d',
+                vertfonce: '#054A44',
+                jaune: '#FDCC02',
+                vertclair: '#6F7F55',
+                blanc: "#F6F6F9"
+            },
+            fontFamily: {
+                'sans': ['ui-sans-serif', 'system-ui'],
+                'serif': ['ui-serif', 'Georgia'],
+                'mono': ['ui-monospace', 'SFMono-Regular'],
+                'display': ['Oswald'],
+                'body': ['"Open Sans"'],
+                'oredo' : ['Oredo']
             }
             }
         }

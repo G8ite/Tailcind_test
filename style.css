@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Oredo';
+    src: url('assets/font/Oredo-Regular.woff') format('woff2'),
+        url('assets/font/Oredo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* h1{
+    font-family: 'Oredo';
+} */
+/* @layer components {
+    .navLink{
+        @apply hidden md:block font-oredo uppercase color-vertfonce;
+    }
+} */
