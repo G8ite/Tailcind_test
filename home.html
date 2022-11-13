@@ -13,7 +13,7 @@
 
 </head>
 <body class="bg-blanc">
-    <header class="w-full h-20 bg-blanc flex justify-between items-center shadow-lg px-5 md:h-40">
+    <header class="w-full h-20 bg-blanc flex justify-between items-center shadow-lg px-5 md:h-40 md:justify-around">
         <div class="flex h-5 w-8 flex-col justify-between md:hidden">
             <span class="h-1 w-6 rounded bg-vertfonce content-['']"></span>
             <span class="h-1 w-8 rounded bg-vertfonce content-['']"></span>
@@ -25,7 +25,7 @@
         <a class="hidden font-oredo uppercase text-vertclair md:block" href="#">Agenda</a>
         <a class="hidden font-oredo uppercase text-vertclair md:block" href="#">Contact</a>
     </header>
-    <div class="bg-[url('assets/img/fond-b1.png')] bg-cover bg-no-repeat md:bg-[url('assets/img/fond-desktop.png')]">
+    <div class="bg-[url('assets/img/fond-b1.png')] bg-cover bg-no-repeat md:bg-blanc md:h-full">
         <div class="w-full flex flex-col items-center">
             <div class="flex items-center mt-5">
                 <img class="absolute left-0 w-24 -mr-5 md:relative" src="assets/img/bubulles.png" alt="bulles">
@@ -37,16 +37,21 @@
               <span class="w-28 h-1 bg-vertfonce "></span>
               <h2 class="text-xl md:text-4xl font-oredo uppercase">et si on se lavait ?</h2>
         </div>
-        <div class="w-full flex flex-col md:flex-row items-center p-5 md:justify-around">
+        <div class="w-full flex flex-col md:flex-row items-center p-5">
+            <div class="hidden md:w-28 md:h-28 md:bg-vertclair md:absolute md:left-40 md:top-40 md:block md:rounded-full md:shadow-lg"></div>
+            <div class="hidden md:w-32 md:h-32 md:bg-jaune md:absolute md:left-0 md:top-100 md:block md:rounded-full md:shadow-lg"></div>
             <div class="bg-[url('assets/img/decoupe.jpg')] w-40 h-40 rounded-full flex flex-col justify-end items-center border-jaune border-solid border-2 bg-contain md:w-80 md:h-80">
                 <button class="bg-jaune text-blanc font-lato rounded-full text-[10px] mb-2 px-2 md:text-xl">Acheter maintenant</button>
-                <button class="h-6 w-6 bg-jaune rounded-full p-1 mb-2 md:h-12 md:w-12 md:p-2"><img src="assets/img/panier.png" alt=""></button>
+                <button class="h-6 w-6 bg-jaune rounded-full p-1 mb-2 md:h-12 md:w-12 md:p-2"><img src="assets/img/panier.png" alt="panier"></button>
             </div>
-            <p class="text-blanc font-lato text-[12px] pt-5 bg-vertfonce">Avant il y avait le gel douche et les problèmes de peau.<br>
-                Avant il y avait plus de bouteilles dans la douche que de pieds à laver.<br>
-                Avant il y avait des poubelles à vider.<br>
-                Mais avant ça, y’avait quoi ?<br>
-            </p>
+            <div class="md:bg-[url('assets/img/fond-b1-desktop.png')] md:bg-cover md:bg-no-repeat md:h-80 md:w-1/2 md:absolute md:right-0">
+                <p class="text-blanc font-lato text-[12px] pt-5 md:text-xl">
+                    Avant il y avait le gel douche et les problèmes de peau.<br>
+                    Avant il y avait plus de bouteilles dans la douche que de pieds à laver.<br>
+                    Avant il y avait des poubelles à vider.<br>
+                    Mais avant ça, y’avait quoi ?<br>
+                </p>
+            </div>
         </div>
     </div>
     <div class="bg-[url('assets/img/decoupe.jpg')] bg-cover z-0">
@@ -60,39 +65,45 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col items-center py-5 bg-blanc shadow-lg">
-        <div class="bg-[url('assets/img/ccc_photo_densemble2.jpg')] rounded-full w-40 h-40 flex bg-cover">
-            <div class="bg-blanc/[0.8] w-1/2 rounded-l-full flex justify-center items-center px-5">
-                <p class="font-oredo uppercase">Les savons</p>
+    <div class="flex flex-col md:flex-row items-center py-5 bg-blanc shadow-lg md:justify-around">
+        <div class="flex flex-col justify-center items-center">
+            <div class="bg-[url('assets/img/ccc_photo_densemble2.jpg')] rounded-full w-40 h-40 flex bg-cover md:w-80 md:h-80">
+                <div class="bg-blanc/[0.8] w-1/2 rounded-l-full flex justify-center items-center px-5">
+                    <p class="font-oredo uppercase">Les savons</p>
+                </div>
             </div>
+            <button class="border-jaune border-solid border-2 text-xs text-jaune rounded-xl px-2 bg-blanc my-5">En savoir plus</button>
         </div>
-        <button class="border-jaune border-solid border-2 text-xs text-jaune rounded-xl px-2 bg-blanc my-5">En savoir plus</button>
-        <div class="bg-[url('assets/img/Bain-lacte-1.jpg')] rounded-full w-40 h-40 flex bg-cover">
-            <div class="bg-blanc/[0.8] w-1/2 rounded-l-full flex justify-center items-center px-5">
-                <p class="font-oredo uppercase">Les lingettes à cul</p>
+        <div class="flex flex-col justify-center items-center">
+            <div class="bg-[url('assets/img/Bain-lacte-1.jpg')] rounded-full w-40 h-40 flex bg-cover md:w-80 md:h-80">
+                <div class="bg-blanc/[0.8] w-1/2 rounded-l-full flex justify-center items-center px-5">
+                    <p class="font-oredo uppercase">Les lingettes à cul</p>
+                </div>
             </div>
+            <button class="border-jaune border-solid border-2 text-xs text-jaune rounded-xl px-2 bg-blanc my-5">En savoir plus</button>
         </div>
-        <button class="border-jaune border-solid border-2 text-xs text-jaune rounded-xl px-2 bg-blanc my-5">En savoir plus</button>
-        <div class="bg-[url('assets/img/vdc_photo_densemble1.jpg')] rounded-full w-40 h-40 flex bg-cover">
-            <div class="bg-blanc/[0.8] w-1/2 rounded-l-full flex justify-center items-center px-5">
-                <p class="font-oredo uppercase">Les coffrets cadeaux</p>
+        <div class="flex flex-col justify-center items-center">
+            <div class="bg-[url('assets/img/vdc_photo_densemble1.jpg')] rounded-full w-40 h-40 flex bg-cover md:w-80 md:h-80">
+                <div class="bg-blanc/[0.8] w-1/2 rounded-l-full flex justify-center items-center px-5">
+                    <p class="font-oredo uppercase">Les coffrets cadeaux</p>
+                </div>
             </div>
+            <button class="border-jaune border-solid border-2 text-xs text-jaune rounded-xl px-2 bg-blanc my-5">En savoir plus</button>
         </div>
-        <button class="border-jaune border-solid border-2 text-xs text-jaune rounded-xl px-2 bg-blanc my-5">En savoir plus</button>
     </div>
     <footer class="bg-blanc text-vertfonce text-lato">
-        <div class="w-full px-28 h-6 flex flex-row justify-around my-5">
-            <img src="assets/img/facebook2.png" alt="facebook">
+        <div class="w-full px-28 h-6 flex flex-row justify-around my-5 md:justify-center">
+            <img class="md:mx-10" src="assets/img/facebook2.png" alt="facebook">
             <img src="assets/img/instagram2.png" alt="instagram">
-            <img src="assets/img/pinterest2.png" alt="">
+            <img class="md:mx-10" src="assets/img/pinterest2.png" alt="">
         </div>
         <div class="flex justify-around pb-5">
-            <div class="flex flex-col">
+            <div class="flex flex-col md:flex-row md:justify-around md:w-1/2">
                 <a href="#">Mentions légales</a>
                 <a href="#">Nos CGV</a>
                 <a href="#">Paiement sécurisé</a>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col md:flex-row md:justify-around md:w-1/2">
                 <a href="#">A propos de nous</a>
                 <a href="#">Agenda</a>
                 <a href="#">Contact</a>
