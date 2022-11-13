@@ -3,8 +3,15 @@
 @tailwind utilities;
 @font-face {
     font-family: 'Oredo';
-    src: url('assets/font/Oredo-Regular.woff') format('woff2'),
+    src: url('assets/font/Oredo-Regular.woff2') format('woff2'),
         url('assets/font/Oredo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+    font-family: 'Lato';
+    src: url('assets/font/Lato-Regular.woff2') format('woff2'),
+        url('assets/font/Lato-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
